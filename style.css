@@ -1,0 +1,75 @@
+*{
+
+	font-family: 'Black Ops One', cursive;
+	font-size: 20px;
+}
+h1{
+	margin-top: 50px;
+	margin-bottom: -30px;
+}
+
+body{
+	background: #bdc3c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+}
+
+button{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+table{
+width: 100%;
+align-content: center;
+align-items: center;
+justify-content: center;
+justify-items: center;
+}
+
+.container2{
+	padding: 0;
+	margin-top: -50px;
+	margin-bottom: -20px;
+}
+
+.box1{
+	margin-top: 100px;
+	padding: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin: 30px;
+	margin-top: 90px;
+	border-radius: 10px;
+	background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	
+}
+
+.box2{
+	margin-top: 100px;
+	padding: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+	border-radius: 10px;
+	margin: 30px;
+	margin-top: 90px;
+	background: #7F7FD5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+
+}
+table{
+	border-radius: 10px;
+}
+
+h3{
+	color: rgb(221, 17, 17);
+}
+
+/* button.hover{
+	color: #7F7FD5;
+} */

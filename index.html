@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h1>BUDGET CALCULATOR</h1>
+        </center>
+
+        <div class="row">
+
+            <div class="col-6">
+
+                <form class="box1 border border-3 border border-dark" >
+                    <div></div>
+                    <div class="mb-3">
+                        <label class=" form-label ">Enter Your Name</label>
+                        <input type="text" class="form-control border border-1 border-dark" id="name"
+                            placeholder="enter name">
+
+                    </div>
+                    <div class="mb-3">
+                        <label class=" form-label">Enter Budget</label>
+                        <input type="text" class="form-control border border-1 border-dark" id="BudgetName"
+                            placeholder="enter budget">
+                    </div>
+                    
+                        <button type="button" onclick="addbudget()" class="btn btn-primary" id="addbtn">ADD</button>
+                         <button type="button" onclick="resetbudget()" class="btn btn-primary" id="resetbtn">RESET</button>
+                    
+                </form>
+            </div>
+
+            <div class="col-6">
+
+                <form class="box2 border border-3 border border-dark ">
+                    <div></div>
+                    <div class="mb-3">
+                        <label class=" form-label">Enter Your Expenses</label>
+                        <input type="text" class="form-control border border-1 border-dark" id="title"
+                            placeholder="eg-petrol,groceries">
+
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" id="expamt" >amount</label>
+                        <input type="text" class="form-control border border-1 border-dark" id="Amount"
+                            placeholder="enter amount">
+                    </div>
+                    <center>
+                        <button type="button" onclick="addexpense()" class="btn2 btn btn-primary">DONE</button>
+                    </center>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="container2 p-5">
+        <div class="row">
+            <div class="col-4">
+                <h3 style="text-align: center;">Budget</h3>
+                <center>
+                <div class="budget-amount m-2"><span id="budget-amount">0</span></div>
+            </center>
+          
+            </div>
+            <div class=" col-4">
+                <h3 style="text-align: center;">
+                    Expenses</h3>
+                    <center>
+                        <div class="budget-expense m-2"><span id="budget-expense">0</span></div>
+                    </center>
+                 
+            </div>
+            <div class="col-4">
+                <h3 style="text-align: center;">
+                    Balance</h3>
+                    <center>
+                        <div class="budget-balance m-2"><span id="budget-balance">0</span></div>
+                    </center>
+            </div>
+        </div>
+    </div>
+
+<div class="row">
+
+    <div class="col-4"></div>
+    
+    <div class="col-4">
+<div class="exptable">
+    <table>
+            <thead >
+                <tr>
+                    <th style="border: 2px solid black; padding-left: 20px; padding-right: 20px;">Expenses</th>
+                    <th style="border: 2px solid black; padding-left: 20px; padding-right: 20px;">Expense Amount</th>
+                    <th style="border: 2px solid black; padding-left: 20px; padding-right: 20px;">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="table_exp">
+                <!-- <tr>
+                    <td style="border: 2px solid black;"></td>
+                    <td style="border: 2px solid black;"></td>
+                    <td style="border: 2px solid black;"></td>
+                </tr> -->
+                
+
+            </tbody>
+    </table>
+</div>
+    </div>
+    
+    <div class="col-4"></div>
+
+</div>
+
+
+</body>
+<script src="./script.js"></script>
+</html>
